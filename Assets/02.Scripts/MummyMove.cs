@@ -21,6 +21,6 @@ public class MummyMove : MonoBehaviour
         Vector3 lookDir = new Vector3(camTr.position.x, transform.position.y, camTr.position.z);
         transform.LookAt(lookDir);
         //이동
-        transform.Translate(transform.forward * Time.deltaTime * moveSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
     }
 }
